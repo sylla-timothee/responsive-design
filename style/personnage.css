@@ -20,12 +20,16 @@
 }
 
 .image-container img {
-    width: 120px;
-    height: 120px;
+    /* On utilise width ET max-width pour être sûr */
+    width: 120px !important; 
+    height: 120px !important;
+    min-width: 120px; /* Empêche l'image de rétrécir */
+    
     object-fit: cover;
-    border-radius: 50%; /* Image ronde pour un look de "profil" */
+    border-radius: 50%;
     border: 2px solid #4db6ac;
     transition: all 0.4s ease;
+    display: inline-block; /* Important pour que Flexbox les traite bien */
 }
 
 .image-container img:hover {
