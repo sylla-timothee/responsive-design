@@ -20,7 +20,7 @@
 }
 
 .image-container img {
-    /* On utilise width ET max-width pour être sûr */
+
     width: 120px !important; 
     height: 120px !important;
     min-width: 120px; 
