@@ -16,20 +16,20 @@
 .image-container {
     display: flex;
     gap: 15px;
-    flex-wrap: wrap; /* Permet aux images de passer à la ligne sur téléphone */
+    flex-wrap: wrap; 
 }
 
 .image-container img {
     /* On utilise width ET max-width pour être sûr */
     width: 120px !important; 
     height: 120px !important;
-    min-width: 120px; /* Empêche l'image de rétrécir */
+    min-width: 120px; 
     
     object-fit: cover;
     border-radius: 50%;
     border: 2px solid #4db6ac;
     transition: all 0.4s ease;
-    display: inline-block; /* Important pour que Flexbox les traite bien */
+    display: inline-block; 
 }
 
 .image-container img:hover {
