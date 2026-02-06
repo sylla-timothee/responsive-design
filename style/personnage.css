@@ -1,0 +1,34 @@
+.personnage-card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(129, 212, 250, 0.2);
+    border-radius: 12px;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.personnage-card h3 {
+    margin-top: 0;
+    color: #81d4fa;
+    text-shadow: 0 0 5px rgba(129, 212, 250, 0.3);
+}
+
+.image-container {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap; /* Permet aux images de passer à la ligne sur téléphone */
+}
+
+.image-container img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%; /* Image ronde pour un look de "profil" */
+    border: 2px solid #4db6ac;
+    transition: all 0.4s ease;
+}
+
+.image-container img:hover {
+    border-color: #81d4fa;
+    box-shadow: 0 0 15px #4db6ac;
+}
